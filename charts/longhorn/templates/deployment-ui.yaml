@@ -1,3 +1,4 @@
+{{- if .Values.longhornUI.enabled }}
 {{- if .Values.openshift.enabled }}
 {{- if .Values.openshift.ui.route }}
 # https://github.com/openshift/oauth-proxy/blob/master/contrib/sidecar.yaml
@@ -180,3 +181,4 @@ spec:
     {{- else }}
     nodePort: null
     {{- end }}
+{{- end }}
