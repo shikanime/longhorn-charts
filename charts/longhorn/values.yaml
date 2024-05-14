@@ -380,6 +380,8 @@ longhornDriver:
   #  label-key2: "label-value2"
 
 longhornUI:
+  # -- Setting that allows you to enable the Longhorn UI.
+  enabled: true
   # -- Replica count for Longhorn UI.
   replicas: 2
   # -- PriorityClass for Longhorn UI.
